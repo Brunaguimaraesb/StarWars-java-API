@@ -9,7 +9,7 @@
 - Springboot
 - Java 11
 - Maven
-- JDBL
+- JDBC Template
 - TDD Test Driven Development
 
 ## Projeto
