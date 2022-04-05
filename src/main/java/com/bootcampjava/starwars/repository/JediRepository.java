@@ -20,5 +20,5 @@ public interface JediRepository {
     Jedi save(Jedi jedi);
 
     //deleta
-    boolean delete(int id);
+    boolean delete(Integer id);
 }
