@@ -1,6 +1,7 @@
 package com.bootcampjava.starwars.repository;
 
 import com.bootcampjava.starwars.model.Jedi;
+import com.bootcampjava.starwars.service.JediService
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.dao.EmptyResultDataAccessException;
@@ -88,8 +89,7 @@ public class JediRepositoryImpl implements JediRepository{
 
         return jedi;
     }
-
-
+    @Override
     public boolean delete(Integer id) {
         return jdbcTemplate.update("DELETE FROM jedis WHERE id = ?", id) == 1;
     }
